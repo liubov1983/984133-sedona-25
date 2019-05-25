@@ -95,8 +95,29 @@
           <p>Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="date-arrive">Дата заезда</label>
+              <input type="text" name="date-arrive" placeholder="24 апреля 2017" id="date-arrive">
+            </p>
+            <p>
+              <label for="date-leave">Дата выезда</label>
+              <input type="text" name="date-leave" placeholder="4 июля 2017" id="date-leave">
+            </p>
+            <p>
+              <label for="adults">Взрослые</label>
+              <input type="number" name="adults" min="1" max="10" step="1" value="2" id="adults">
+            </p>
+            <p>
+              <label for="children">Дети</label>
+              <input type="number" name="children" min="0" max="10" step="1" value="0" id="children">
+            </p>
+            <button class="button" type="submit">
+              Найти
+            </button>
+          </form>
           <figure class="map">
-            <img src="img/map.png" width="1200" height="593" alt="Мост дьявола">
+            <img src="img/map.png" width="1200" height="593" alt="Местоположение Седоны на карте">
           </figure>
         </section>
       </main>
