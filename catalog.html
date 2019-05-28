@@ -26,7 +26,68 @@
 
           <div class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-          <!-- Здесь будет форма -->
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input"
+                    type="checkbox" name="pool" checked>Бассейн
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input"
+                    type="checkbox" name="parking">Парковка
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input"
+                    type="checkbox" name="wi-fi">Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input"
+                    type="checkbox" name="hotel" checked>Гостиница
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input"
+                    type="checkbox" name="motel" checked>Мотель
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input"
+                    type="checkbox" name="apartments" checked>Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <p>Стоимость в сутки (Р):</p>
+            <!--Маркеры-->
+            <button type="submit" class="filter-button button">
+              Показать
+            </button>
+          </form>
+          </div>
+          <div class="filter-results">
+            <p>Найдено: 3</p>
+            <p>Сортировка</p>
+            <ul>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
           </div>
 
           <section class="catalog-results">
