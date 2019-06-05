@@ -14,12 +14,29 @@ body {
 
 .container {
 	background-color: #ffffff;
-	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 a {
 	text-decoration: none;
 }
+
+.visually-hidden {
+	position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 .main-navigation {
 	font-weight: 700;
@@ -59,6 +76,31 @@ a {
 
 .description p {
 	text-align: center;
+}
+
+.features {
+	background-color: #eeeeee;
+}
+
+.features-list,
+.service-list {
+	list-style: none;
+}
+
+.features-item-wrapper {
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.features-item h3,
+.service-list h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.service-list {
+	background-color: #ffffff;
 }
 
 .search h2 {
@@ -134,8 +176,95 @@ a {
 	color: #766357;
 }
 
+.filters {
+	color: #ffffff;
+	line-height: 21px;
+
+	background-color: #cccccc;
+	background-image: url("../img/filter-background.jpg");
+    background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.filters legend,
+.filters p {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.filter ul {
+	list-style: none;
+}
+
 .catalog-list {
 	list-style: none;
+}
+
+.filter-input:disabled {
+	color: #6a6a6a;
+}
+
+.filter-button {
+	font: inherit;
+
+	text-transform: uppercase;
+	color: #ffffff;
+
+	background-color: transparent;
+	border: 1px solid #ffffff;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+	color: #000000;
+
+	background-color: #ffffff;
+	border: none;
+}
+
+.filter-results p:first-child {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.filter-results p:nth-child(2),
+.filter-results li {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.filter-results ul {
+	list-style: none;
+}
+
+.filter-results a {
+	color: rgba(0, 0, 0, 0.3);
+
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-current a {
+	color: #81b3d2;
+
+	border: none;
+}
+
+.filter-results a:hover,
+.filter-results a:focus {
+	color: #81b3d2;
+
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.filter-results a:active {
+	color: #000000;
+
+	border: none;
 }
 
 .catalog-description a {
@@ -145,7 +274,6 @@ a {
 .catalog-description h3 {
 	font-size: 21px;
 }
-
 
 .catalog-description a:hover {
     color: #81b3d2;
@@ -197,7 +325,6 @@ a.to-book:active {
 .rating span {
 	background-color: #f2f2f2;
 }
-
 
 .main-footer {
 	color: #000000;
