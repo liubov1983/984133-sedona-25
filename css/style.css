@@ -453,11 +453,6 @@ img {
     padding: 0;
 }
 
-.rating {
-	margin: 0;
-    margin-left: auto;
-}
-
 .catalog-button {
 	display: flex;
 	justify-content: space-between;
@@ -508,7 +503,11 @@ a.to-book:active {
 	background-color: #503e33; 
 }
 
-
+.rating {
+	margin: 0;
+    margin-left: auto;
+    margin-right: 70px; 
+}
 
 .rating span {
 	background-color: #f2f2f2;
