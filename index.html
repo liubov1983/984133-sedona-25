@@ -34,60 +34,58 @@
 
         <section class="features">
           <h2 class="visually-hidden">Преимущества</h2>
-          <div class="features-list-container">
-            <ul class="features-list">
-              <li class="features-item">
-                <div class="features-item-wrapper">
-                  <h3>Настоящий городок</h3>
-                  <p>— №1 —</p>
-                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                </div>
-                <figure>
-                  <img src="img/town.jpg" width="800" height="401" alt="Городок Седона">
-                </figure>
-              </li>
-              <li class="features-item">
-                <div class="features-item-wrapper">
-                  <h3>Там есть Мост дьявола</h3>
-                  <p>— №2 —</p>
-                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                </div>
-                <figure>
-                  <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
-                </figure>
-              </li>
-              <li class="features-item">
-                <h3>Небольшая площадь</h3>
-                <p>— №3 —</p>
-                <p>Все достопримечательности находятся очень близко</p>
-              </li>
-              <li class="features-item">
-                <h3>Красивая дорога</h3>
-                <p>— №4 —</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </li>
-              <li class="features-item">
-                <h3>Мало туристов</h3>
-                <p>— №5 —</p>
-                <p>Большинство едет в гранд каньон и толпится там</p>
-              </li>
-            </ul>
-            <ul class="service-list">
-              <li class="service-item">
-                <h3>Жильё</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li class="service-item">
-                <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="service-item">
-                <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
+          <div class="features-item">
+            <div class="features-item-wrapper">
+              <h3>Настоящий городок</h3>
+              <p>— №1 —</p>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <figure>
+              <img src="img/town.jpg" width="800" height="256" alt="Городок Седона">
+            </figure>
           </div>
-        </section>
+          <div class="service-list">
+            <div class="service-item">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+            <div class="service-item">
+            <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="service-item">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </div>
+          </div>
+          <div class="features-item">
+            <div class="features-item-wrapper">
+              <h3>Там есть Мост дьявола</h3>
+              <p>— №2 —</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <figure>
+              <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
+            </figure>
+          </div>
+          <div class="features-item-container">
+            <div class="features-item features-item-column">
+              <h3>Небольшая площадь</h3>
+              <p>— №3 —</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="features-item features-item-column">
+              <h3>Красивая дорога</h3>
+              <p>— №4 —</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="features-item features-item-column">
+              <h3>Мало туристов</h3>
+              <p>— №5 —</p>
+              <p>Большинство едет в гранд каньон <br> и толпится там</p>
+            </div>
+          </div>
+        </section>  
 
         <section class="search">
           <h2>Заинтересовались?</h2>
@@ -95,22 +93,24 @@
           гостиниц в Седоне</p>
           <a href="form.html">Поиск гостиницы в Седоне</a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label for="date-arrive">Дата заезда</label>
+            <div class="form-item">
+              <label for="date-arrive">Дата заезда:</label>
               <input type="text" name="date-arrive" value="24 апреля 2017" id="date-arrive">
-            </p>
-            <p>
-              <label for="date-leave">Дата выезда</label>
+            </div>
+            <div class="form-item">
+              <label for="date-leave">Дата выезда:</label>
               <input type="text" name="date-leave" value="4 июля 2017" id="date-leave">
-            </p>
-            <p>
-              <label for="adults">Взрослые</label>
-              <input type="number" name="adults" min="1" max="10" step="1" value="2" id="adults">
-            </p>
-            <p>
-              <label for="children">Дети</label>
-              <input type="number" name="children" min="0" max="10" step="1" value="0" id="children">
-            </p>
+            </div>
+            <div class="form-item input-wrapper">
+              <div class="input-wrapper-column">
+                <label for="adults">Взрослые:</label>
+                <input type="number" name="adults" min="1" max="10" step="1" value="2" id="adults">
+              </div>
+              <div class="input-wrapper-column">
+                <label for="children">Дети:</label>
+                <input type="number" name="children" min="0" max="10" step="1" value="0" id="children">
+              </div>
+            </div>
             <button class="button" type="submit">
               Найти
             </button>
