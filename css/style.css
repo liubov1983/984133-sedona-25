@@ -48,7 +48,18 @@ img {
 }
 
 .main-header {
-	position: relative;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 1200px;
+}
+
+.inner-header {
+	left: 0;
+	top: 0;
+
+	width: 1200px;
 }
 
 .main-header-logo {
@@ -85,9 +96,14 @@ img {
 .site-navigation a {
 	display: block;
     width: 100px;
-    padding: 15px 70px;
+    padding: 15px 71px;
 
 	color: #000000;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:last-child {
+	text-align: right;
 }
 
 .site-navigation a:hover,
@@ -102,7 +118,7 @@ img {
 .intro {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 65px;
+	margin-bottom: 60px;
 
 	background-color: #cccccc;
 	background-image: url("../img/background.jpg");
@@ -112,19 +128,19 @@ img {
 
 .intro img {
 	margin: auto;
-	margin-top: 75px;
+	margin-top: 132px;
 	margin-bottom: 80px;
 }
 
 .description {
 	position: relative;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .description::before {
     content: "";
     position: absolute;
-    top: -122px;
+    top: -118px;
     left: -1px;
 
     width: 100%;
@@ -136,9 +152,9 @@ img {
 
 .description h1 {
 	width: 450px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 
 	font-size: 21px;
 	line-height: 26px;
@@ -146,14 +162,11 @@ img {
 }
 
 .description p {
-    margin: 0;
-    padding: 0;
-
 	text-align: center;
 }
 
 .features {
-    margin-bottom: 60px;
+    margin-bottom: 53px;
 
 	background-color: #eeeeee;
 }
@@ -171,7 +184,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 0 58px 0;
+    padding: 48px 0 60px 0;
     width: 400px;
 
 	color: #ffffff;
@@ -180,14 +193,23 @@ img {
 	background-color: #81b3d2;
 }
 
-.features-item-wrapper p:last-child {
+.features-item-wrapper p,
+.features-item-container p {
+	margin-top: 20px;
+	margin-bottom: 18px;
+}
+
+.features-item-wrapper p:last-child,
+.features-item-column p:last-child {
 	margin: 0;
-	width: 280px;
+	width: 305px;
+
+    line-height: 1.5;
 }
 
 .features-item h3,
 .service-list h3 {
-	width: 165px;
+	width: 160px;
 	margin: 0;
 
 	font-size: 21px;
@@ -216,7 +238,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 165px 0 90px 0;
+	padding: 160px 0 68px 0;
 	width: 400px;
 
 	text-align: center;
@@ -224,23 +246,26 @@ img {
 
 .service-item p {
 	width: 305px;
+	margin-top: 25px;
+
+	line-height: 1.5;
 }
 
 .service-item:first-child {
 	background-image: url("../img/icon-1.png");
-	background-position: 50% 25%;
+	background-position: 50% 23%;
 	background-repeat: no-repeat;
 }
 
 .service-item:nth-child(2) {
-	background-image: url("../img/icon-2.png");
-	background-position: 50% 25%;
+	background-image: url("../img/icon-3.png");
+	background-position: 50% 23%;
 	background-repeat: no-repeat;
 }
 
 .service-item:last-child {
-	background-image: url("../img/icon-3.png");
-	background-position: 50% 25%;
+	background-image: url("../img/icon-2.png");
+	background-position: 50% 23%;
 	background-repeat: no-repeat;
 }
 
@@ -254,7 +279,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 0 58px 0;
+    padding: 48px 0 58px 0;
     width: 400px;
 
     text-align: center;
@@ -271,7 +296,7 @@ img {
 .search h2 {
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 
 	font-size: 30px;
 	line-height: 36px;
@@ -286,7 +311,7 @@ img {
 	display: block;
 	width: 450px;
 	margin: 0 auto;
-	margin-bottom: 40px;
+	margin-bottom: 44px;
     padding: 0;
 
     line-height: 24px;
@@ -320,14 +345,14 @@ img {
 
 .search-form {
     position: absolute;
-    top: 250px;
+    top: 240px;
     left: 316px;
 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: auto;
-	padding-top: 57px;
+	padding-top: 56px;
 	width: 568px;
 
 	background-color: #ffffff;
@@ -354,7 +379,7 @@ img {
 	box-sizing: border-box;
 	width: 346px;
 	height: 38px;
-	padding: 6px 12px;
+	padding: 5px 12px;
 	margin-left: auto;
 
 	font: inherit;
@@ -364,7 +389,7 @@ img {
 	text-transform: uppercase;
 }
 
-.search-form input:hover, {
+.search-form input:hover {
 	background-color: #ebebeb;
 }
 
@@ -376,7 +401,7 @@ img {
 
 .calendar {
 	position: absolute;
-	right: 0;
+	right: 3px;
 	top: 1px;
 
 	width: 35px;
@@ -410,7 +435,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 230px;
+	width: 228px;
 }
 
 .input-wrapper-column:last-child {
@@ -418,7 +443,7 @@ img {
 }
 
 .input-wrapper input {
-	padding: 6px 15px 6px 15px;
+	padding: 5px 15px 5px 15px;
 	width: 40px;
 	height: 38px;
 
@@ -428,7 +453,7 @@ img {
 .value {
 	display: flex;
 	justify-content: flex-start;
-	width: 114px;
+	width: 115px;
 }
 
 .value-minus {
@@ -476,9 +501,9 @@ img {
 .search-form .button {
 	display: block;
 	width: 458px;
-	padding: 18px 195px 22px 195px;
-	margin-top: 24px;
-	margin-bottom: 48px;
+	padding: 18px 195px 16px 195px;
+	margin-top: 23px;
+	margin-bottom: 53px;
 
 	font-size: 21px;
 	font-weight: 700;
@@ -505,8 +530,8 @@ img {
 }
 
 .filters {
-    margin-bottom: 30px;
-    padding: 30px 70px;
+	margin-bottom: 30px;
+    padding: 30px 72px 8px 72px;
 
 	color: #ffffff;
 	line-height: 21px;
@@ -520,6 +545,8 @@ img {
 .filter {
 	display: flex;
 	justify-content: space-between;
+
+	margin-top: 53px;
 }
 
 .filters fieldset {
@@ -549,7 +576,7 @@ img {
 }
 
 .filter-option {
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 	padding-left: 40px;
 }
 
@@ -559,7 +586,6 @@ img {
     display: block;
 
     cursor: pointer;
-
 }
 
 .filter-input + label::before {
@@ -605,7 +631,7 @@ img {
 }
 
 .filter-range {
-	width: 330px;
+	width: 318px;
 	margin-left: auto;
 }
 
@@ -620,7 +646,7 @@ img {
 .price-controls {
     position: relative;
 
-    height: 36px;
+    height: 33px;
     margin-bottom: 20px;
 
     font-size: 0;
@@ -646,20 +672,25 @@ img {
     display: inline-block;
 
     font-size: 14px;
-    line-height: 38px;
+    line-height: 21px;
     vertical-align: top;
 
     cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
     width: 90px;
     padding-left: 65px;
 }
 
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 58px;
+}
+
 .price-controls input {
     width: 50px;
+    height: 32px;
     margin: 0;
 
     color: inherit;
@@ -752,7 +783,7 @@ img {
 	align-items: center;
 	width: 520px;
 	padding-left: 70px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 
 .filter-results p {
@@ -805,7 +836,7 @@ img {
 }
 
 .sort li {
-	padding-left: 30px;
+	padding-left: 33px;
 }
 
 .sort-current a {
@@ -817,8 +848,9 @@ img {
 .icons {
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 30px; 
 	margin-left: auto;
-	margin-right: 70px;
+	margin-right: 71px;
 	width: 35px;
 }
 
@@ -853,7 +885,7 @@ img {
 }
 
 .catalog-image {
-	margin: 0 30px 0 70px;
+	margin: 0 31px 0 71px;
 	width: 135px;
 	height: 90px;
 }
@@ -863,8 +895,8 @@ img {
 	flex-wrap: wrap;
 	align-content: space-between;
 	width: 258px;
-	min-height: 90px;
-	margin: 30px 0 30px 0;
+	min-height: 89px;
+	margin: 26px 0 30px 0;
 }
 
 .catalog-description h3 {
@@ -892,6 +924,17 @@ img {
     padding: 0;
 }
 
+.catalog-info {
+	display: flex;
+	justify-content: space-between;
+	width: 258px;
+}
+
+.catalog-info span:last-child {
+	margin-right: 75px;
+	margin-bottom: 13px;
+}
+
 .catalog-button {
 	display: flex;
 	justify-content: space-between;
@@ -900,7 +943,7 @@ img {
 
 .learn-more,
 .to-book {
-	padding: 5px 16px;
+	padding: 4px 16px;
 }
 
 .button a {
@@ -958,11 +1001,12 @@ a.to-book:active {
 	display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-	width: 100px;
+	width: 113px;
 }
 	
 .rating-stars span {
-	margin-left: 5px;
+	margin-left: 6px;
+	margin-bottom: 48px;
     width: 18px;
     height: 17px;
 
@@ -973,6 +1017,8 @@ a.to-book:active {
 .rating p {
 	margin: 0;
 	padding: 0;
+
+	text-align: center;
 
 	background-color: #f2f2f2;
 }
@@ -985,7 +1031,7 @@ a.to-book:active {
 .main-footer {
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 5px;
 
     display: flex;
     justify-content: space-between;
@@ -1011,7 +1057,6 @@ a.to-book:active {
 
 .main-footer p:first-child,
 .inner-page-footer p:first-child {
-    margin: 0;
     padding-left: 132px;
 
 	width: 180px;
@@ -1056,11 +1101,16 @@ a.to-book:active {
 
 .footer-copyright {
 	margin: 0;
-    padding-right: 101px;
+    padding-right: 102px;
 	width: 210px;
+
+	text-align: right;
 }
 
 .copyright-logo svg {
+	width: 115px;
+	height: 45px;
+	
 	vertical-align: middle;
 }
 
